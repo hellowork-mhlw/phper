@@ -18,3 +18,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
+    - name: Tests
+      run: |
+        php index.php "https://httpbin.org/ip"
+        php index.php "https://example.com"
