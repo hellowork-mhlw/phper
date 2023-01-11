@@ -1,5 +1,6 @@
 {
     "require": {
-        "chrome-php/chrome": "^0.11.2"
+        "chrome-php/chrome": "^0.11.2",
+        "wrench/wrench": "^2.0"
     }
 }
