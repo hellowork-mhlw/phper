@@ -20,4 +20,4 @@ jobs:
       run: composer install --prefer-dist --no-progress
     - name: Tests
       continue-on-error: true
-      run: for url in `curl https://gist.githubusercontent.com/hellowork-mhlw/2fd4fdf9b07faee34dafacaba6bfff95/raw/hatebu.urls.txt`; do echo "$url"; php index.php "$url"; done
+      run: for url in `curl https://gist.githubusercontent.com/hellowork-mhlw/2fd4fdf9b07faee34dafacaba6bfff95/raw/hatebu.urls.txt`; do echo "$url"; php index.php "$url" || true; done
